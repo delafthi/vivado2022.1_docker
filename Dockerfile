@@ -35,9 +35,11 @@ RUN apt-get install -y -qq \
 RUN apt-get install -y -qq \
   libnss3
 
-# Requirements for Vitis HLS
+# Requirements for Vitis
 RUN apt-get install -y -qq \
-  libgtk2.0-0
+  libgtk2.0-0 \
+  libswt-gtk-4-java \
+  xorg
 
 # Requirements for PetaLinux (Listed here just as a reference, since PetaLinux is not installed)
 # RUN apt-get install -y -qq \
