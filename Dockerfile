@@ -28,7 +28,8 @@ RUN apt-get install -y -qq \
 
 # Requirements for Vivado SDK
 RUN apt-get install -y -qq \
-  libtinfo5
+  libtinfo5 \
+  default-jre
 
 # Requirements for DocNav
 RUN apt-get install -y -qq \
